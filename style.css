@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #eeeceb;
+}
+
+footer {
+  position: fixed;
+  background: #14005c;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #afafb6;
+}
+
+footer .conteudo {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+footer .conteudo .topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.conteudo .topo .detalheslogo {
+  color: #fff;
+  font-size: 30px;
+}
+
+.conteudo .topo .iconesmidia {
+  display: flex;
+}
+
+.conteudo .topo .iconesmidia a {
+  height: 40px;
+  width: 40px;
+  background: red;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(1) {
+  background: #426782;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(1):hover {
+  color: #426782;
+  background: #fff;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(2) {
+  background: #1da1f2;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(2):hover {
+  color: #1da1f2;
+  background: #fff;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(3) {
+  background: #e1306c;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(3):hover {
+  color: #e1306c;
+  background: #fff;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(4) {
+  background: #0077b5;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(4):hover {
+  color: #0077b5;
+  background: #fff;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(5) {
+  background: #ff0000;
+}
+
+.conteudo .topo .iconesmidia a:nth-child(5):hover {
+  color: #ff0000;
+  background: #fff;
+}
+
+footer .conteudo .caixalink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .conteudo .caixalink .caixa {
+  width: calc(100% / 5 - 10px);
+}
+
+.conteudo .caixalink .caixa .nomelink {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.caixalink .caixa .nomelink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+.caixainput li {
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.caixainput .nomelink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+.conteudo .caixalink .caixa li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.conteudo .caixalink .caixa li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.conteudo .caixalink .caixa li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.conteudo .caixalink .caixainput {
+  margin-right: 55px;
+}
+
+.caixalink .caixainput input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.caixalink .caixainput input::placeholder {
+  color: #AFAFB6;
+  font-size: 16px;
+}
+
+.caixalink .caixainput input[type="submit"] {
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.caixainput input[type="button"]:hover {
+  opacity: 1;
+}
+
+footer .detalhesbaixo {
+  width: 100%;
+  background: #0f0844;
+}
+
+footer .detalhesbaixo .textobaixo {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .detalhesbaixo .textobaixo span,
+footer .detalhesbaixo .textobaixo a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.detalhesbaixo .textobaixo a {
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  footer .conteudo .caixalink {
+    flex-wrap: wrap;
+  }
+
+  footer .conteudo .caixalink .caixainput {
+    width: 40%;
+    margin-top: 10px;
+  }
+
+
+  @media (max-width: 700px) {
+    footer {
+      position: relative;
+    }
+
+    .conteudo .topo .detalheslogo {
+      font-size: 26px;
+    }
+
+    .conteudo .topo .iconesmidia a {
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    footer .conteudo .caixalink .caixa {
+      width: calc(100% / 3 - 10px);
+    }
+
+    footer .conteudo .caixalink .caixainput {
+      width: 60%;
+    }
+
+    .detalhesbaixo .textobaixo span,
+    .detalhesbaixo .textobaixo a {
+      font-size: 12px;
+    }
+
+
+    @media (max-width: 520px) {
+      footer::before {
+        top: 145px;
+      }
+
+      footer .conteudo .topo {
+        flex-direction: column;
+      }
+
+      .conteudo .topo .iconesmidia {
+        margin-top: 16px;
+      }
+
+      footer .conteudo .caixalink .caixa {
+        width: calc(100% / 2 - 10px);
+      }
+
+      footer .conteudo .caixalink .caixainput {
+        width: 100%;
+      }
+    }
+  }
+}
